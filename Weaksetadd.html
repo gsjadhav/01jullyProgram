@@ -1,0 +1,16 @@
+<script>
+    var ws1 = new WeakSet();
+    var obj1={};
+    var obj2={};
+    ws1.add(obj1);
+    ws1.add(obj2);
+    document.write(ws1.has(obj1)+"<br>");
+    document.write(ws1.has(obj2)+"<br>");
+     var ws2=new WeakSet();
+     try {
+         ws2.add(obj);
+         document.write(ws2.has(obj));
+     } catch (error) {
+         document.write("Obj Not define");
+     }
+</script>
